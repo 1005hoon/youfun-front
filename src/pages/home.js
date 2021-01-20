@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import * as ROUTES from "../constants/routes";
 
 import Header from "../components/header";
+import Navbar from "../components/navbar";
 
 import logo from "../logo.svg";
 
@@ -10,8 +11,17 @@ export default function Home({ children }) {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div class="container">
-      <h1>Hello World</h1>
-    </div>
+    <>
+      <Header>
+        <Header.Container>
+          <Navbar>
+            <h1>logo</h1>
+            <ul>
+              <li>some list</li>
+            </ul>
+          </Navbar>
+        </Header.Container>
+      </Header>
+    </>
   );
 }

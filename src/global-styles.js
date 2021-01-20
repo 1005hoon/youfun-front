@@ -8,5 +8,8 @@ export const GlobalStyles = createGlobalStyle`
     color: #fff;
     -webkit-font-smoothing: antialised;
     -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
   }
 `;
