@@ -114,7 +114,6 @@ export const NavScrollLink = styled(ScrollLink)`
   &.active,
   :hover {
     color: #fff;
-    font-weight: 500;
   }
 `;
 
@@ -131,8 +130,9 @@ export const CTALink = styled(RouterLink)`
   height: 24px;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
-    transform: t;
+    transform: scale(1.1);
   }
 `;
